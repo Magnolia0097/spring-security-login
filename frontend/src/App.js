@@ -94,8 +94,9 @@ const deleteItem = (item) => {
 
 
 // editltem 함수 
-const editItem = () => {
-  setItems([...items]);
+const editItem = (item) => {
+  call("/todo", "PUT", item)
+  .then((response) => setItems(response.data));
 };
 
 
