@@ -16,6 +16,5 @@ public class ResponseDTO<T> {
 	// HTTP 응답으로 사용하게될 DTO
 	
 	private String error;
-	private String test;
 	private List<T> data;
 }
